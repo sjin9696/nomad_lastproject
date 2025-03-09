@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <title>Last Project</title>
+  </head>
+  <body>
+    
+    <header style="display: flex; justify-content: space-between; align-items: center;">
+        <h1 id="greeting"></h1>
+        <button id="logout-button" style="display: none;">로그아웃</button>
+    </header>
+
+    <main>
+      <form id="login-form">
+        <input type="text" placeholder="사용자 이름을 입력하세요" required />
+        <button id="login-button">로그인</button>
+      </form>
+
+      <section id="weather">
+        <span></span>
+        <span></span>
+      </section>
+
+      <h2 id="clock">00:00:00</h2>
+
+      <section id="quote">
+        <span></span>
+        <span></span>
+      </section>
+
+      <form id="todo-form">
+        <i class="fas fa-folder"></i>
+        <input type="text" placeholder="할 일을 입력하고 엔터를 누르세요" required />
+      </form>
+
+      <ul id="todo-list"></ul>
+    </main>
+
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/login.js"></script>
+  </body>
+</html>
